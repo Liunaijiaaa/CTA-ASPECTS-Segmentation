@@ -14,4 +14,4 @@ pip install -r requirements.txt
 
 4. Prepare the data and run training.
 
-## Before run your project, remember 'wandb login'
+## Before run your project, remember run 'wandb login'(you can ignore this if you do not have wandb account.)
