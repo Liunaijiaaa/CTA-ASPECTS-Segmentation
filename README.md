@@ -1,4 +1,4 @@
-Segmentation of 15 brain areas in the blood supply area of the middle cerebral artery.
+# Segmentation of 15 brain areas in the blood supply area of the middle cerebral artery.
 ## Quick start
 
 ### Without Docker
@@ -13,4 +13,5 @@ pip install -r requirements.txt
 ```
 
 4. Prepare the data and run training.
-### Before run your project, remember 'wandb login'
+
+## Before run your project, remember 'wandb login'
