@@ -4,6 +4,8 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from .smu import *
+from .SE import *
+
 
 class DoubleConv(nn.Module):
     """(convolution => [BN] => ReLU) * 2"""
@@ -18,6 +20,7 @@ class DoubleConv(nn.Module):
             # nn.ReLU(inplace=True),
             SMU(),
             nn.Conv2d(mid_channels, out_channels, kernel_size=3, padding=1),
+            nn.scSE(out_channels),
             nn.BatchNorm2d(out_channels),
             # nn.ReLU(inplace=True)
             SMU()
